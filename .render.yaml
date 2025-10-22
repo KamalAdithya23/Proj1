@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: your-service-name
+    name: fastapi-app       # Change this to your preferred service name
     env: python
     pythonVersion: 3.11
     buildCommand: pip install --no-cache-dir -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    startCommand: uvicorn main:app --host 192.168.31.179 --port 7000
